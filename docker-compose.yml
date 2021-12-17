@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  jupyter:
+    container_name: notebooks
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./notebooks:/notebooks
+    command: jupyter lab --allow-root --ip=0.0.0.0
+    ports:
+      - 8888:8888
