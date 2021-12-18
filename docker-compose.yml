@@ -8,6 +8,6 @@ services:
       dockerfile: ./Dockerfile
     volumes:
       - ./notebooks:/notebooks
-    command: jupyter lab --allow-root --ip=0.0.0.0
+    command: jupyter lab --allow-root --ip='*' --NotebookApp.token='' --NotebookApp.password=''
     ports:
       - 8888:8888
