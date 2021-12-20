@@ -15,3 +15,6 @@ http://localhost:8888
 or
 
 http://0.0.0.0:8888
+
+
+![Data Analysis](assets/demo.gif)
